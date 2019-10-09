@@ -327,7 +327,6 @@ public:
 				{
 					auto& p1 = he->origin->p, p2 = he->twin->origin->p, p3 = he->pred->origin->p, p4 = he->twin->pred->origin->p;
 
-					//检查v3 v4是否已有边连接 如果有说明是凹四边形 不做翻转
 					bool doFlip = false;
 					if (p1.id >= 0 && p2.id >= 0 && p3.id >= 0 && p4.id >= 0)
 					{
